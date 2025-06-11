@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Uthman - Menu</title>
+    <!-- Link to external CSS for styling the whole website -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery library (required for Fotorama and for your JSON popup in add-to-cart) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Fotorama plugin for image slideshow (carousel) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- Cafe logo image at the top left -->
+            <img src="images/cafe_uthman_logo.png" alt="Cafe Uthman Logo">
+        </div>
+        <nav>
+            <ul>
+                <!-- Navigation links for different pages -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li class="cart-icon-container">
+                    <!-- Cart icon with item count (updates when you add to cart) -->
+                    <a href="my-order.html">
+                        🛒 <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="menu-list">
+            <!-- Menu items with images, descriptions, prices, and add-to-cart buttons -->
+            <h2>Our Menu</h2>
+            <div class="items-container">
+                <div class="item">
+                    <img src="images/nasi_lemak.jpg" alt="Nasi Lemak">
+                    <h3>Nasi Lemak</h3>
+                    <p>A fragrant rice dish cooked in coconut milk and pandan leaf, served with anchovies, peanuts, cucumber, and spicy sambal.</p>
+                    <p class="price">RM 6.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="images/roti_canai.jpg" alt="Roti Canai">
+                    <h3>Roti Canai</h3>
+                    <p>A flaky flatbread served with various curries, perfect for breakfast or a light meal.</p>
+                    <p class="price">RM 2.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="images/teh_tarik.jpg" alt="Teh Tarik">
+                    <h3>Teh Tarik</h3>
+                    <p>A popular Malaysian pulled tea, creamy and frothy, a perfect beverage for any time of the day.</p>
+                    <p class="price">RM 2.50</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="images/ayam_gepuk.jpg" alt="Ayam Gepuk">
+                    <h3>Ayam Gepuk Sambal Gajus</h3>
+                    <p>Spicy fried chicken with crunchy cashew sambal, served with rice and vegetables.</p>
+                    <p class="price">RM 7.50</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer with copyright -->
+        <p>&copy; 2025 Cafe Uthman</p>
+    </footer>
+
+    <!-- Link to your custom JavaScript file for cart and other interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>

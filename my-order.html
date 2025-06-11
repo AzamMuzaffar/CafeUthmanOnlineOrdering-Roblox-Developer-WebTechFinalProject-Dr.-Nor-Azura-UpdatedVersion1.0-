@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Uthman - My Order</title>
+    <!-- Link to external CSS for styling the whole website -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- Cafe logo image at the top left -->
+            <img src="images/cafe_uthman_logo.png" alt="Cafe Uthman Logo">
+        </div>
+        <nav>
+            <ul>
+                <!-- Navigation links for different pages -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li class="cart-icon-container">
+                    <!-- Cart icon with item count (updates when you add to cart) -->
+                    <a href="my-order.html">
+                        🛒 <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="my-order-page">
+            <!-- Title for the cart page -->
+            <h1>My Shopping Cart</h1>
+            <!-- Container where cart items will be dynamically inserted by script.js -->
+            <div id="cart-items-container">
+                <p>Your cart is empty.</p>
+            </div>
+            <div class="cart-summary">
+                <!-- Shows the total price of items in the cart -->
+                <p>Total: <span id="cart-total">RM 0.00</span></p>
+                <!-- Button to proceed to checkout, handled by script.js -->
+                <button id="checkout-button">Proceed to Checkout</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer with copyright -->
+        <p>&copy; 2025 Cafe Uthman</p>
+    </footer>
+
+    <!-- Link to your custom JavaScript file for cart and other interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>
